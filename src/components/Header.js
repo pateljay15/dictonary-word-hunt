@@ -20,7 +20,7 @@ const Header = ({ category, setCategory, setWord, word, lightMode}) => {
 
     return (
         <div className="header">
-            <span className="title">Word Hunt</span>
+            <span className="title">{word === "" ? "Word Hunt" : word}</span>
             <div className="inputs">
                 <ThemeProvider theme={darkTheme}>
                     <TextField
